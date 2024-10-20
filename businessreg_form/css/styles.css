@@ -1,0 +1,109 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px 0; /* Added padding at the top for spacing */
+}
+
+/* Container for forms */
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* This centers the container horizontally */
+    text-align: center; /* Center the text inside the container */
+}
+
+/* Headings */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Input fields */
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%; /* Full width of the container */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding and border don't affect width */
+}
+
+/* Submit button */
+input[type="submit"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #433878; /* Dark purple */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Ensure padding and border don't affect width */
+}
+
+input[type="submit"]:hover {
+    background-color: #322760; /* Darker purple on hover */
+}
+
+/* Links */
+a {
+    color: #433878;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+    margin-top: 50px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+/* Set consistent column widths */
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Add zebra-striping for better readability */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+a {
+    color: #433878;
+    text-decoration: none;
+    margin-right: 10px; /* Add spacing between the Edit/Delete links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
