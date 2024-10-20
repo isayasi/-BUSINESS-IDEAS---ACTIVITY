@@ -5,12 +5,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Edit Barista</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<?php $getBaristaByID = getBaristaByID($pdo, $_GET['barista_id']); ?>
-	<h1>Edit the user!</h1>
+	<h1>Edit Barista</h1>
 	<form action="core/handleForms.php?barista_id=<?php echo $_GET['barista_id']; ?>" method="POST">
 		<p>
 			<label for="firstName">First Name</label> 
@@ -19,6 +19,8 @@
 		<p>
 			<label for="firstName">Last Name</label> 
 			<input type="text" name="last_name" value="<?php echo $getBaristaByID['last_name']; ?>">
+		</p>
+		<p>
 			<input type="submit" name="editBaristaBtn">
 		</p>
 	</form>
